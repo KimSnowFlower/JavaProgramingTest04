@@ -21,7 +21,7 @@ class Circle implements Shape {
 	}
 	
 	public void draw() {
-		System.out.println("반지름이" + this.radius + "인 원입니다.");
+		System.out.println("반지름이 " + (int)this.radius + "인 원입니다.");
 	}
 	
 	public double getArea() {
@@ -42,7 +42,7 @@ class Oval implements Shape {
 	}
 	
 	public void draw() {
-		System.out.println(this.ovalX + "x" + this.ovalY + "에 내접하는 타원입니다");
+		System.out.println(this.ovalX + "x" + this.ovalY + "에 내접하는 타원입니다.");
 	}
 	
 	public double getArea() {
