@@ -10,7 +10,7 @@ interface Shape {
 }
 
 class Circle implements Shape {
-	private double radius;
+	private int radius;
 	
 	public Circle() {
 		this.radius = 0;
@@ -21,11 +21,11 @@ class Circle implements Shape {
 	}
 	
 	public void draw() {
-		System.out.println("반지름이 " + (int)this.radius + "인 원입니다.");
+		System.out.println("반지름이 " + this.radius + "인 원입니다.");
 	}
 	
 	public double getArea() {
-		return this.radius * this.radius * PI;
+		return PI * this.radius * this.radius;
 	}
 }
 
@@ -46,7 +46,7 @@ class Oval implements Shape {
 	}
 	
 	public double getArea() {
-		return this.ovalX * this.ovalY * PI;
+		return PI * ovalX * ovalY;
 	}
 }
 
